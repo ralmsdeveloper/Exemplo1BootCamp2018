@@ -19,7 +19,6 @@ namespace EFCoreBootcamp2018
                 var evento = db.Set<Evento>()
                     .Where(p => Funcoes.DateDIFF("DAY", p.Data, DateTime.Now) > 0)
                     .ToList();
-
             }
 
             Console.ReadKey();
